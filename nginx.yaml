@@ -4,7 +4,7 @@
   tasks:
   - name: installing nginx
     ansible.builtin.dnf: #dnf denotes redhat os otherwise apt denotes ubuntu and yum denotes linux
-    name: nginx
+      name: nginx
       state: latest
   - name: starting nginx
     ansible.builtin.service:
